@@ -1,3 +1,3 @@
 # tsilacker
-hello people  , i want to share all code with all of you 
-im a developper web and pentester and i will share code to help you in pentesting
+hello people , I'm just an programmer and pentester, I Want to devellopp my skills to be the BEST
+I want to share with all of youu my code 
