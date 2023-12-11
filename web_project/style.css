@@ -1,0 +1,149 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*============================
+   NAVBAR__section
+   ==========================*/
+   body { 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #navbar {
+    overflow: hidden;
+    background-color: white;
+    padding: 31px 10px;
+    transition: 0.6s;
+    position:fixed; 
+    width: 100%;
+    top: 0;
+  }
+  
+  #navbar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+
+  }
+  
+  #navbar #logo {
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.4s;
+  }
+  
+  #navbar a:hover {
+   color: blue;
+   text-decoration:underline;
+  }
+  
+  #navbar a.active {
+   
+    color: blue;
+  }
+  
+  #navbar-right {
+    float: right;
+    margin-top: 25px ;
+  }
+  
+  
+  /****hero image*****/
+  header{
+    height: 600px;
+    background-image: url('image/font/fond.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  /*boutton revenir en haut*/
+ /* Ajoutez une classe pour l'animation d'apparition */
+#to__top {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+/* Ajoutez la classe visible pour montrer l'élément */
+#to__top.visible {
+    opacity: 1;
+}
+/*******************************************************/
+#boutton__main{
+margin-top: 60px;
+margin-right: 20px;
+opacity: 0;
+}
+/************************************************* => boutton__header*/
+#head__btn{
+  margin-top: 200px;
+  background-color: red;
+}
+/*animate__opacity*/
+.fade-in {
+  /* opacity: 0;*/
+   animation: fadeInAnimation 1s ease-in;
+ }
+ 
+ @keyframes fadeInAnimation {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
+
+ .center{
+  display: flex;
+  justify-content: center;
+ }
+ 
+
+ /*==animation__to_down==*/
+ .animate{position:relative;animation:move 2s infinite}
+ 
+@keyframes move
+{
+0% {top:-5px;} 
+50% {top:5px;}
+
+100% {top:-5px;}
+}
+
+/***media queriesq***/
+@media screen and (max-width:950px) {
+  #navbar-right {
+   display: none;
+   
+  }
+  #droite{
+   margin-top: 400px;
+  }
+  #ravelojaona{
+    font-size: 30px;
+    color: lightblue;
+  }
+
+}
+/*==SMALl_DEVICE==*/
+@media screen and (max-width:400px){
+  #logo{
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+  
+    
+    }
+    #onifra{
+      text-align: center;
+      font-weight: 1000;
+    }
+}
+/*==END MEDIA QUERIES==*/
