@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>wEB_tsila</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="body_contact">
+    <header>
+        <button><strong>CODING</strong></button>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Acceuill</a>
+        <a href="portfolio.html">Mes Projets</a>
+        <a href="cv.html">script</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+       
+            <nav>
+      <ul>
+        <span class="overlay" style="font-size:30px;padding:100px;color: white;cursor:pointer;z-index: 99999;" onclick="openNav()">&#9776;</span>
+          <li><a href="index.html" class="active">Acceuil</a></li>
+          <li><a href="portfolio.html">Mes projets</a></li>
+          <li><a href="cv.html">Script </a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </nav>
+
+    <!--<div class="wrapper">
+            <aside>
+                    <article>
+                        <img src="images/portrait-min.jpg" alt="portrait du cv">
+                        <h3 class="title">INFORMATIONS</h3>
+                        <ul>
+                            <li>Nom : PAREIN</li>
+                            <li>Prénom : Jean-philippe</li>
+                            <li>Née le 24/11/1974</li>
+                            <li>Situtation familliale : Marié</li>
+                            <li>Nombre d'enfants : 2</li>
+                            <li>Titulaire du permis B</li>
+                        </ul>
+                        <br>
+                    </article>
+        
+                    <article>
+                        <h3 class="title">MES ATOUTS</h3>
+                        <div class="atouts">
+                            <p>Bonne humeur: <span>300%</span></p>
+                            <progress value="100" max="100"></progress>
+        
+                            <p>Adaptation: <span>100%</span></p>
+                            <progress value="100" max="100"></progress>
+        
+                            <p>Curiosité: <span>80%</span></p>
+                            <progress value="80" max="100"></progress>
+        
+                            <p>Polyvalence: <span>90%</span></p>
+                            <progress value="90" max="100"></progress>
+        
+                            <p>Créativité: <span>95%</span></p>
+                            <progress value="95" max="100"></progress>
+        
+                            <p>Sens du détail: <span>99.99%</span></p>
+                            <progress value="99" max="100"></progress>
+                        </div>
+                        <br>
+                    </article>
+                </aside>-->
+        
+                <div class="contact">
+
+                    <h1 class="title">ME CONTACTER</h1>
+                    <br>
+                    <form  class="forme" action="#">
+
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" placeholder="Votre nom?" size="100">
+
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" placeholder="Votre prenom?">
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="xxxxxxxx@gmail.com" required>
+
+                        <label for="msg">Votre méssage</label>
+                        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Votre message " required></textarea>
+                        
+                        <p class="message">Veuillez remplir ces informations si vous voulez poser des questions ou juste pour me connaitre , je suis ravi de vous repondre tout de suite</p>
+
+                        <input class="submit" type="submit" value="Envoyer votre message">
+                    </form>
+                </div>
+    </div>  
+    
+    <footer>
+        <p>  © 2023 - RAKOTOARIVONY Anjarasoa Tsilavina - Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>

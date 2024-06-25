@@ -1,95 +1,232 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ONIVERSITY ONIFRA">
-    <meta name="keywords" content="FJKM,ONIFRA,Ravelojaona,ampandrana">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONIFRA_UNIVERSITY | TEMPLATE web</title>
-     <!-- Favicons -->
-  <link href="" rel="icon">
-  <link href="" rel="apple-touch-icon">
-  <!--CSS AND BOOTSTRAP-->
-    <link rel="stylesheet" href="src/bootstrap.min.css">
-    <link rel="stylesheet" href="src/font-awesome.min.css">
-    <link rel="stylesheet" href="src/all.min.css">
-    <link rel="stylesheet" href="swipper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="w3.css">
-    <!--MAin css source-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Web_projet</title>
     <link rel="stylesheet" href="style.css">
-    <!--SCRIPT javascript => (js_plugins)-->
-    <script src="src/angular.min.js"></script>
-    <script src="src/bootstrap.bundle.min.js"></script>
-    <script src="src/jquery.min.js"></script>
-    <script src="swipper/popper.min.js"></script>
-    <script src="swipper/swipper-bundle.min.js"></script>
-    <script src="animation.js"></script>
-    <!--FONTS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+   
 </head>
-    <body class="w3-animate-opacity">
-  <!--navbar section-->
-  <header id="opac__" >
-   <!--<video autoplay muted loop id="myVideo" height="600px" width="100%">
-      <source src="image/font/matrix.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
-    </video> -->
-    <div id="test" style="z-index: 9999; height: 200px;background-color: blue;position: absolute;"></div>
-  <div id="navbar" style="background-color: rgba(247, 241, 241, 0.1);z-index: 999;" class="w3-card-2">
-    <a href="#default" id="onifra" style="color: rgb(70, 70, 153); letter-spacing: 5px;margin-top: 26px;margin-left: 0;" class="w3-animate-left" ><i style="font-weight: 600;">OniFRa</i></a>
-    <img src="image/logo/logo_onifra.png" alt="log" width="100px" height="100px" id="logo">
-    <div id="navbar-right">
-      <a class="active w3-hide-small" href="#home">Acceuil</a>
-      <a href="#contact" class="w3-hide-small">description</a>
-      <a href="#"  class="w3-hide-small">Parcours</a>
-      <a href="#"  class="w3-hide-small">Evenements</a>
-      <a href="#"  class="w3-hide-small">Annonce</a>
-      <a href="#"  class="w3-hide-small">dropdown</a>
-      <i class="fas fa-chevron-down w3-hide-small" style="margin-top: 17px;margin-right: 50px;"></i> 
-     </div>
-    <button class="btn btn-primary w3-display-topright" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo" style="margin-right: 10px;margin-top: 66px;" id="droite">
-      &#9776
-    </button>
-  </div>
-  <p class="w3-animate-left" style="background-color: transparent;font-size: 30px; color: white;padding-top: 400px;text-align: center;" id="head_btn"><strong>ONIVERSITY</strong></p>
-    <p class=" w3-tag w3-transparent w3-display-middle" style="font-size: 50px; color: white;padding-top: 20px;text-align: center;color: rgb(37, 37, 124);font-family: 'Times New Roman', Times, serif;" ><strong id="ravelojaona">FJKM RAVELOJAONA</strong></p>
-    <div class="center"><button class="__ w3-hover-opacity animate" style="font-size: 30px; color: white;margin-top:10px;text-align: center;border: none;background-color: transparent;"><a href="#down" style="text-decoration: none;"><i class="fas fa-chevron-down" style="margin-top: 17px;"></i> </a></button></div>  <!--scroll_ down-->
-  </header>
-    <div class="w3-display-bottomright" style="position: fixed; ">
-      <button  style="padding: 10px; border: none;" id="to__top"><a href="#test" style="text-decoration:none;  transition: opacity 3s ease-in-out;background-color: transparent;"> <i class="fas fa-arrow-up" style="font-size: 20px; color: blue; margin-right: 30px;margin-bottom: 20px;background-color: transparent;"></i></a></button>
-    </div>
-        </button>
-         <div class="offcanvas offcanvas-start" id="demo">
-          <div class="offcanvas-header">
-            <h1 class="offcanvas-title">MENU</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-          </div>
-          <div class="offcanvas-body" style="background-color: lightblue;z-index: 9999;">
-            <a href="#" style="text-decoration: none; font-size: 20px;margin-left: 50px;" href="#home">Home</a><br>
-      <a href="#contact" style="text-decoration: none;margin-top: 6px; font-size: 20px;margin-left: 50px;">Contact</a><br>
-      <a href="#" style="text-decoration: none; font-size: 20px;margin-left: 50px;">Parcours</a><br>
-      <a href="#" style="text-decoration: none; font-size: 20px;margin-left: 50px;">Evenements</a><br>
-      <a href="#" style=" text-decoration: none;font-size: 20px;margin-left: 50px;">Offres</a><br>
-      <a href="#" style="text-decoration: none; font-size: 20px;margin-left: 50px;">dropdown</a><br>
-          </div>
-        </div>
-        <!-- END Header section -->
-        <!--About section-->
-       <div class="container mt-5" id="#start">
-          <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6 w3-card-4" style="padding: 0;height: 350px;z-index: -1;" id="image_one">
-            <img src="image/font/vert.jpg" alt="firs" width="100%" height="auto">
-            </div> 
-             <div class="col-sm-12 col-md-6 col-lg-6" style="height: 400px; margin-top: 10px;padding-left: 40px; z-index: -2;" id="image_two"><h2 style="margin-bottom: 20px;">A propos</h2><p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste dolore sequi similique ratione soluta odio ut, fuga quia nemo quo ipsum sit assumenda earum autem, molestiae porro deserunt sapiente?Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe magnam magni fugit exercitationem, temporibus fugiat molestiae quos iste explicabo odio quaerat, amet ducimus ipsa vero consequuntur minima laborum autem repellendus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis soluta ut excepturi quibusdam fugiat at odio dignissimos qui reprehenderit, error facilis amet officiis tempore praesentium quae alias eveniet voluptatem? Saepe.</p>
-              <button style="margin-top: 20px;margin-left: 20px;border-radius: 10%;padding: 5px;" class="btn btn-primary">En savoir plus >></button>
-                </div> 
-              </div>
-           </div>
-           <br><br><br>
-        
-        
+
+<body >
+    <header>
+    <p id="demo"></p>
+<script>
+    var i = 0;
+    var txt = 'Hello , this is my websites and enjoy for reading this , this websites is now for devellopement';
+    var speed = 10;
+    
+    window.onload = function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+ </script>
+<script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
+      <button onmousemove="typeWriter()"><strong>CODING</strong></button>
       
+    </header>
+    <style>
+       
+        </style>
+        </head>
+        <body>
+        
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Acceuill</a>
+          <a href="portfolio.html">Mes Projets</a>
+          <a href="cv.html">script</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+         
+              <nav>
+        <ul>
+          <span class="overlay" style="font-size:30px;padding:100px;color: white;cursor:pointer;z-index: 99999;" onclick="openNav()">&#9776;</span>
+            <li><a href="index.html" class="active">Acceuil</a></li>
+            <li><a href="portfolio.html">Mes projets</a></li>
+            <li><a href="cv.html">Script </a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  <div class="wrapper">
+        <aside>
+            <article>
+                <img class="me" src="images/me.jpg" alt="portrait du cv"  width="200px">
+                <h3 class="title">INFORMATIONS</h3>
+                <ul>
+                    <li>Nom : RAKOTOARIVONY</li>
+                    <li>Prénom : Anjarasoa Tsilavina Alifera</li>
+                    <li>Née le 24/09/04</li>
+                    <li>Situtation familliale : celibataire</li>
+                    <li>Nombre d'enfants : 0</li>
+                    <li>Titulaire du permis B</li>
+                </ul>
+                <br>
+            </article>
+            <article>
+                <h3 class="title">MES ATOUTS</h3>
+                <div class="atouts">
+                    <p>Bonne humeur: <span>100%</span></p>
+                    <progress value="100" max="100"></progress>
+
+                    <p>Adaptation: <span>100%</span></p>
+                    <progress value="100" max="100"></progress>
+
+                    <p>Curiosité: <span>80%</span></p>
+                    <progress value="80" max="100"></progress>
+
+                    <p>Polyvalence: <span>90%</span></p>
+                    <progress value="90" max="100"></progress>
+
+                    <p>Créativité: <span>95%</span></p>
+                    <progress value="95" max="100"></progress>
+
+                    <p>Sens du détail: <span>99.99%</span></p>
+                    <progress value="99" max="100"></progress>
+                </div>
+                <br>
+            </article>
+        </aside>
+
+        <section>
+            <article>
+                <h3 class="title">A PROPOS DE MOI</h3>
+                <p>Hey, je me nomme RAKOTOARIVONY Anjarasoa Tsilavina Alifera , une personne passionné par le monde de les technologies, le monde de l’informatique. Actuellement je suis encore un étudiant à l’université pour en approfondir ce domaine. Ayant un désir de créer des nouveaux choses qui pourrait être utiles dans notre monde, c’est une de mes motivations .Alors notre but c’est de créer un monde meilleurs avec les technologies car notre monde évolue de plus en plus chaque jours, la découverte des nouvelles technologies qui pourraient changer notre monde.</p>
+                
+            </article>
+
+            <article>
+                    <h3 class="title">CE QUE JE RECHERCHE</h3>
+                    <p>Moi, ce que je cherche c’est d’avoir un avenir meilleurs, d’étudier de temps en temps pour y avoir beaucoup de connaissances. Pour moi je pense que la recherche joue un rôle important dans nos études. Les informaticiens sont généralement des créatifs dans l’âme. Ils aiment concevoir et développer des applications, des sites web, des jeux vidéo, etc. Alors je cherche généralement des opportunités pour mettre en pratique mes compétences et réaliser des projets concrets.
+
+                    </p>
+                    
+            </article>
+
+            <h3 class="title">COMPETENCES</h3>
+            <div id="flex-container">
+                <div class="item">
+                    <img src="images/html.png" alt="icone">
+                    <p>L’ HTML (HyperText Markup Langage) est une langage de base en informatique, ceci permet d’écrire nos articles sur notre page web. C’est aussi un langage simple car si vous venez débuter l’informatique celle-ci est faites pour vous 😉</p>
+                </div>
+
+                <div class="item">
+                        <img src="images/css.png" alt="icone">
+                        <p>Le CSS (Cascading Style Sheets) permet de décorer notre page web, Il rend notre page web plus présentable, stylés. Le CSS permet aussi de contrôler notre design😉</p>
+                </div>
+
+                <div class="item">
+                        <img src="images/python.png" alt="icone">
+                        <p>Python est un langage très interessante car il est facile apprendre et aussi il est utilisé dans plusieurs domaines telleque les chattbot, IA </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <h2 class="section-title">
+        Passions
+    </h2><br><br><br>
+
+
+    <section class="flex">
+        <div class="flex_container">
+            <div class="un">
+                  <img class="item" src="images/hacker.jpg" alt="tsila" width="400px" height="300px">
+                  <p>Coder en plusieurs langage informatique</p>    
+        
+                </div>
+              
+            <div class="un"> 
+                <img class="item" src="images/hollywood.jpg" alt="tsila" width="400px" height="300px">
+               
+                <p>L’ HTML (HyperText Markup Langage) est une langage de base en informatique, ceci permet d’écrire nos articles sur notre page web. C’est aussi un langage simple car si vous venez débuter l’informatique celle-ci est faites pour vous 😉</p>    
+               
+            </div>
+            <div class="un">
+              
+              <img class="item" src="images/virus.jpg" alt="tsila" width="400px" height="300px">
+              <p>L’ HTML (HyperText Markup Langage) est une langage de base en informatique, ceci permet d’écrire nos articles sur notre page web. C’est aussi un langage simple car si vous venez débuter l’informatique celle-ci est faites pour vous 😉</p>
+            </div>
+    
+        </div> <br> <br>
+        
+  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  
   
+  <div id="social" class="media">
+    <a href="#" id="about">About</a>
+    <a href="https://www.facebook.com/profile.php?id=100088633325455" id="blog">Facebook</a>
+    <a href="#" id="projects">google</a>
+    <a href="#" id="contact">0387581356</a>
+     </div>
+     <div class="download">
+         <a  class="download-file" href="GPU.exe">DOWNLOAD</a>
+
+     </div>
+     <br>  <br>  <br>  <br>  <br> 
+     <img id = "monimage" src="images/anonyme .png" alt="mon image" width="400px" height="300px">
+     <script>
+     window.onscroll = function() {
+        var image = document.getElementById("monimage");
+        var imagePosition = image.getBoundingClientRect().top;
+        var screenHeight = window.innerHeight;
+      
+        if (imagePosition < screenHeight) {
+          image.style.transform = "translateX(100px)";
+        }
+      }
+   </script>
+    <!--smooth-->
+    <!--<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const smoothElements = document.querySelectorAll('a[href^="#"]');
+      
+        smoothElements.forEach((element) => {
+          element.addEventListener('click', (event) => {
+            event.preventDefault();
+            const target = document.querySelector(event.target.hash);
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          });
+        });
+      });
+    </script>-->
+    <script>
+    window.addEventListener('load', function() {
+        document.body.classList.add('fade-in');
+     });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+
+    <footer>
+        <p>  © 2023 - RAKOTOARIVONY Anjarasoa Tsilavina - Tous droits réservés.</p>
+    </footer>
+
 </body>
+
 </html>

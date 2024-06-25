@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Web projet</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href=w3.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+      <header>
+       
+<p id="demo"></p>
+<script>
+    var i = 0;
+    var txt = 'Hello , this is my websites and enjoy for reading this , this websites is now for devellopement';
+    var speed = 10;
+    
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+ </script>
+
+    
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
+          <button onclick="typeWriter()"><strong>CODING</strong></button>
+    </header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Acceuill</a>
+        <a href="portfolio.html">Mes Projets</a>
+        <a href="cv.html">script</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+       
+            <nav>
+      <ul>
+        <span class="overlay" style="font-size:30px;padding:100px;color: white;cursor:pointer;z-index: 99999;" onclick="openNav()">&#9776;</span>
+          <li><a href="index.html" class="active">Acceuil</a></li>
+          <li><a href="portfolio.html">Mes projets</a></li>
+          <li><a href="cv.html">Script </a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </nav>
+
+    <div class="wrapper">
+        <aside>
+            <article>
+                <img class="me" src="images/me.jpg" alt="portrait du cv"  width="200px">
+                <h3 class="title">INFORMATIONS</h3>
+                <ul>
+                    <li>Nom : RAKOTOARIVONY</li>
+                    <li>Prénom : Anjarasoa Tsilavina Alifera</li>
+                    <li>Née le 24/09/04</li>
+                    <li>Situtation familliale : celibataire</li>
+                    <li>Nombre d'enfants : 0</li>
+                    <li>Titulaire du permis B</li>
+                </ul>
+                <br>
+            </article>
+
+            <article>
+                <h3 class="title">MES ATOUTS</h3>
+                <div class="atouts">
+                    <p>Bonne humeur: <span>300%</span></p>
+                    <progress value="100" max="100"></progress>
+
+                    <p>Adaptation: <span>100%</span></p>
+                    <progress value="100" max="100"></progress>
+
+                    <p>Curiosité: <span>80%</span></p>
+                    <progress value="80" max="100"></progress>
+
+                    <p>Polyvalence: <span>90%</span></p>
+                    <progress value="90" max="100"></progress>
+
+                    <p>Créativité: <span>95%</span></p>
+                    <progress value="95" max="100"></progress>
+
+                    <p>Sens du détail: <span>99.99%</span></p>
+                    <progress value="99" max="100"></progress>
+                </div>
+                <br>
+            </article>
+        </aside>
+
+        <section>
+           <h1 class="title">MES REALISATIONS</h1>
+            <div class="flex-container-portfolio">
+
+                <div class="item-site">
+                    <a href="http://curenails.co" target="blank">
+                    <img src="images/capture/logicile_vbs.png" alt="Miniature site"></a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis facere fugit hic magni delectus dolor vitae repellat? Veritatis quis ea, optio aut enim nam voluptates, dolorum, commodi voluptas tempora est.</p>
+                </div>
+
+                <div class="item-site">
+                    <a href="http://femmeandfierce.nl" target="blank">
+                    <img src="images/capture/sante3.png" alt="Miniature site"></a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis facere fugit hic magni delectus dolor vitae repellat? Veritatis quis ea, optio aut enim nam voluptates, dolorum, commodi voluptas tempora est.</p>
+                </div>
+
+                <div class="item-site">
+                    <a href="http://hisense.co" target="blank">
+                    <img src="images/capture/rpg.png" alt="Miniature site"></a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis facere fugit hic magni delectus dolor vitae repellat? Veritatis quis ea, optio aut enim nam voluptates, dolorum, commodi voluptas tempora est.</p>
+                </div>
+
+                <div class="item-site">
+                    <a href="http://notpot.com" target="blank">
+                    <img src="images/capture/acteur_base.png" alt="Miniature site"></a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis facere fugit hic magni delectus dolor vitae repellat? Veritatis quis ea, optio aut enim nam voluptates, dolorum, commodi voluptas tempora est.</p>
+                </div>
+
+                <div class="item-site">
+                    <a href="http://seaharvest.net" target="blank">
+                    <img src="images/capture/ransomware.png" Miniature site"></a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis facere fugit hic magni delectus dolor vitae repellat? Veritatis quis ea, optio aut enim nam voluptates, dolorum, commodi voluptas tempora est.</p>
+                </div>
+
+                <div class="item-site">
+                    <a href="http://50-jahre-hitparade.ch" target="blank">
+                    <img src="images/capture/site.png" Miniature site"></a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis facere fugit hic magni delectus dolor vitae repellat? Veritatis quis ea, optio aut enim nam voluptates, dolorum, commodi voluptas tempora est.</p>
+                </div>
+            </div>
+        </section>
+
+        
+    </div>  
+    
+    <footer>
+        <p>  © 2023 - RAKOTOARIVONY Anjarasoa Tsilavina - Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
